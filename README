@@ -1,0 +1,6 @@
+WebSpinner is a library designed to allow you to quickly and easily
+design websites using Python, rather than typing clunky HTML.
+
+Since HTML tags are all balanced, they can be considered as nodes
+in a DAG (Directed Acyclic Graph), which is the approach that
+WebSpinner takes.
