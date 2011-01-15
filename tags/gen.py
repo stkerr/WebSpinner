@@ -7,14 +7,11 @@ each time.
 
 def printfile(name, filename):
 	output =  """
-__author__=\"stkerr\"
-__date__ =\"$Jan 14, 2011 10:40:00 AM$\"
-
-import webspinner.tags
+import WebSpinner.tags
 
 class Tag_"""
 	output += filename.title() 
-	output += """(webspinner.Node):
+	output += """(WebSpinner.Node):
 	tag_string = \""""
 	output += name 
 	output += "\"\n"

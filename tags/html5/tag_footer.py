@@ -1,8 +1,5 @@
 
-__author__="stkerr"
-__date__ ="$Jan 14, 2011 10:40:00 AM$"
+import WebSpinner.tags.html5
 
-import webspinner.tags.html5
-
-class Tag_Footer(webspinner.Node):
+class Tag_Footer(WebSpinner.Node):
 	tag_string = "footer"

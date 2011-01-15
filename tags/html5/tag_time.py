@@ -1,8 +1,5 @@
 
-__author__="stkerr"
-__date__ ="$Jan 14, 2011 10:40:00 AM$"
+import WebSpinner.tags.html5
 
-import webspinner.tags.html5
-
-class Tag_Time(webspinner.Node):
+class Tag_Time(WebSpinner.Node):
 	tag_string = "time"
