@@ -1,0 +1,118 @@
+"""
+Gen.py
+This is just a helper file that will generate the python
+tag files quickly, so they don't have to be done by hand
+each time.
+"""
+
+def printfile(name, filename):
+	output =  """
+__author__=\"stkerr\"
+__date__ =\"$Jan 14, 2011 10:40:00 AM$\"
+
+import webspinner.tags
+
+class Tag_"""
+	output += filename.title() 
+	output += """(webspinner.Node):
+	tag_string = \""""
+	output += name 
+	output += "\"\n"
+
+	f = open("tag_" + filename + ".py", "w+")
+	f.write(output)
+	f.close()
+
+
+printfile("!doctype", "doctype")
+printfile("a", "a")
+printfile("abbr", "abbr")
+printfile("acronym", "acronym")
+printfile("address", "address")
+printfile("applet", "applet")
+printfile("area", "area")
+printfile("b", "b")
+printfile("base", "base")
+printfile("basefont", "basefont")
+printfile("bdo", "bdo")
+printfile("big", "big")
+printfile("blockquote", "blockquote")
+printfile("body", "body")
+printfile("br", "br")
+printfile("button", "button")
+printfile("caption", "caption")
+printfile("center", "center")
+printfile("cite", "cite")
+printfile("code", "code")
+printfile("col", "col")
+printfile("colgroup", "colgroup")
+printfile("dd", "dd")
+printfile("del", "del")
+printfile("dfn", "dfn")
+printfile("dir", "dir")
+printfile("div", "div")
+printfile("dl", "dl")
+printfile("dt", "dt")
+printfile("em", "em")
+printfile("fieldset", "fieldset")
+printfile("font", "font")
+printfile("form", "form")
+printfile("frame", "frame")
+printfile("frameset", "frameset")
+printfile("h1", "h1")
+printfile("h2", "h2")
+printfile("h3", "h3")
+printfile("h4", "h4")
+printfile("h5", "h5")
+printfile("h6", "h6")
+printfile("head", "head")
+printfile("hr", "hr")
+printfile("html", "html")
+printfile("i", "i")
+printfile("iframe", "iframe")
+printfile("img", "img")
+printfile("input", "input")
+printfile("ins", "ins")
+printfile("isindex", "isindex")
+printfile("kbd", "kbd")
+printfile("label", "label")
+printfile("legend", "legend")
+printfile("li", "li")
+printfile("link", "link")
+printfile("map", "map")
+printfile("menu", "menu")
+printfile("meta", "meta")
+printfile("noframes", "noframes")
+printfile("noscript", "noscript")
+printfile("object", "object")
+printfile("ol", "ol")
+printfile("optgroup", "optgroup")
+printfile("option", "option")
+printfile("p", "p")
+printfile("param", "param")
+printfile("pre", "pre")
+printfile("q", "q")
+printfile("s", "s")
+printfile("samp", "samp")
+printfile("script", "script")
+printfile("select", "select")
+printfile("small", "small")
+printfile("span", "span")
+printfile("strike", "strike")
+printfile("strong", "strong")
+printfile("style", "style")
+printfile("sub", "sub")
+printfile("sup", "sup")
+printfile("table", "table")
+printfile("tbody", "tbody")
+printfile("td", "td")
+printfile("textarea", "textarea")
+printfile("tfoot", "tfoot")
+printfile("th", "th")
+printfile("thead", "thead")
+printfile("title", "title")
+printfile("tr", "tr")
+printfile("tt", "tt")
+printfile("u", "u")
+printfile("ul", "ul")
+printfile("var", "var")
