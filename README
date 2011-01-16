@@ -4,3 +4,8 @@ design websites using Python, rather than typing clunky HTML.
 Since HTML tags are all balanced, they can be considered as nodes
 in a DAG (Directed Acyclic Graph), which is the approach that
 WebSpinner takes.
+
+------ Building the library --------
+Run the gen.py script inside the tags/ directory. This will 
+generate the necessary tag_*.py files. Using this script
+instead of including in the repository saves space.

@@ -60,7 +60,7 @@ from tags.tag_sub import *
 from tags.tag_ul import *
 from tags.tag_acronym import *
 from tags.tag_button import *
-from tags.tag_doctype import *
+#from tags.tag_doctype import *
 from tags.tag_h6 import *
 from tags.tag_legend import *
 from tags.tag_param import *

@@ -7,18 +7,24 @@ __author__ = "stkerr"
 __date__ = "$Jan 14, 2011 10:30:42 AM$"
 
 import sys
-
+from attributes import *
 from css_properties import *
 from javascript_properties import *
 from render_engine import *
-from attributes import *
+from validator import *
 
-class Node(CSS_Properties, Javascript_Properties, Attributes, Render_Engine):
+class Node(CSS_Properties, Javascript_Properties, Attributes, Render_Engine, Validator):
 
-    def __init__(self, parent=None):
+    def __init__(self, parent=None, nodeid=None, nodeclass=None, text=None):
         self.myinit()
         if(parent != None):
             self.set_parent(parent)
+        if(nodeid != None):
+            self.set_attribute("id", nodeid)
+        if(nodeclass != None):
+            self.set_attribute("class", nodeclass)
+        if(text != None):
+            self.set_text(text)
 
     def myinit(self):
         # Any child nodes
